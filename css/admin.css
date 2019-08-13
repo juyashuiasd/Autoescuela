@@ -1,0 +1,107 @@
+body {
+	background-image: url("../images/fondo.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: green;
+	font-family: Arial;
+	width:70%;
+	margin: 0 auto;
+}
+
+form{
+	width:100%;
+}
+
+fieldset{
+	min-width:0;
+	width: 100%;
+}
+
+table{
+width:100%;	
+}
+
+a{
+width: 30%;
+height: 30%;
+margin-top:4%;
+}
+
+a.aizquierda{
+float:left;
+margin-right:1%;
+}
+a.acentro{
+float:left;
+margin-left: 4%;
+}
+
+a.aderecha{
+	float:right;
+	margin-left:1%;
+}
+
+div.datos{
+	float:left;
+}
+
+
+.responsive-image {
+	
+ height: auto;
+  width: 100%;
+}
+
+input{
+	width: 98%;
+	
+}
+
+.ignore{
+	text-align:left;
+}
+
+.dni{
+	float:right;
+}
+
+.enlaces {
+	float:left;
+	width: 25%;  
+}
+
+
+.datos_cliente{
+	float: left; 
+	width: 75%;  
+	margin-bottom: 3%;
+	border-bottom: 2px black solid;
+}
+
+#botones_fila {
+	float:right; 
+	width: 25%;
+}
+
+
+.editar_fila{
+	border:0px;
+	margin:3px;
+	padding:0px;
+	float: right;	
+
+}
+
+
+.titulo{
+	font-size: 1.17em;
+	font-variant: small-caps; 	
+}
+
+.centro{
+	text-align:center;
+}
+
+

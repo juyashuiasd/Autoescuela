@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+<link rel="icon" type="image/png" href="../images/cochecito.png" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Carné C1</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
+</script>
+
+	</head>
+
+	<body>
+
+		<div id = "general">
+			<img width="100%" alt = "header" src = "../images/header.jpg" />
+	</div>
+	
+<nav>
+    <ul>
+        <li><a href="../index/index.html">Inicio</a></li>
+        <li><a href="../index/sobrenosotros.html">Nosotros</a></li>
+        <li><a href="../index/carne.html">Carnés</a></li>
+        <li><a href="../login.php">Login</a></li>
+        <li><a href="../index/contacto.html">Contacto</a></li><br clear="all" />
+    </ul>
+    <a id="pull" href="#">Menu</a>
+</nav>
+	
+	<div class = "lili">
+		<br >
+	<ul>
+		<li> Edad mínima: 18 años.</li>
+		<li> Automóviles cuya masa máxima autorizada exceda de 3.500 kg y no sobrepase los 7.500 kg.</li>
+		<li> Hasta 9 asientos incluido el conductor.</li>
+		<li> Pueden llevar enganchado un remolque de masa máxima autorizada hasta 750 kg.</li>
+		<li> Requisitos: ser titular del permiso de la clase B en vigor.</li>
+		<li> No implica la concesión del A1 y A.</li>
+		<li> Implica la concesión de la autorización BTP.</li>
+	</ul>
+	<br />
+	</div>
+	
+	<div class = "imagencita">
+	<img src = "../images/permisoc1.jpg" alt="permiso C1" width="460px" height="345px">
+	</div>
+
+</body>
+</html>
+

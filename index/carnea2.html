@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="icon" type="image/png" href="../images/cochecito.png" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Carné A2</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
+</script>
+
+	</head>
+
+	<body>
+
+		<div id = "general">
+			<img width="100%" alt = "header" src = "../images/header.jpg" />
+	</div>
+	
+<nav>
+    <ul>
+        <li><a href="../index/index.html">Inicio</a></li>
+        <li><a href="../index/sobrenosotros.html">Nosotros</a></li>
+        <li><a href="../index/carne.html">Carnés</a></li>
+        <li><a href="../login.php">Login</a></li>
+        <li><a href="../index/contacto.html">Contacto</a></li><br clear="all" />
+    </ul>
+    <a id="pull" href="#">Menu</a>
+</nav>
+	<div class = "lili">
+		<br >
+	<ul>
+		<li> Edad: 18 años.</li>
+		<li> Todos los vehículos que autorizan a conducir los permisos AM y A1.</li>
+		<li> Vehículos para personas de movilidad reducida.</li>
+		<li> Motocicletas con o sin sidecar, una potencia máxima de 35 kW y una relación potencia/peso máxima de 0,2 kW/kg. no derivadas de un vehículo con más del doble de su potencia.</li>
+	</ul>
+	<br />
+	</div>
+	
+	<div class = "imagencita">
+	<img src = "../images/permisoa2.jpg" alt = "permiso A2" width="460px" height="345px">
+	</div>
+</body>
+</html>
+

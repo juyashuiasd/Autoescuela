@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="icon" type="image/png" href="../images/cochecito.png" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Carné C+E</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
+</script>
+
+	</head>
+
+	<body>
+
+		<div id = "general">
+			<img width="100%" alt="Header" src = "../images/header.jpg" />
+	</div>
+	
+<nav>
+    <ul>
+        <li><a href="../index/index.html">Inicio</a></li>
+        <li><a href="../index/sobrenosotros.html">Nosotros</a></li>
+        <li><a href="../index/carne.html">Carnés</a></li>
+        <li><a href="../login.php">Login</a></li>
+        <li><a href="../index/contacto.html">Contacto</a></li><br clear="all" />
+    </ul>
+    <a id="pull" href="#">Menu</a>
+</nav>
+	<div class = "lili">
+		<br >
+	<ul>
+		<li> Edad mínima: 21 años.</li>
+		<li> Un vehículo automóvil autorizado a conducir con el permiso de la clase C.</li>
+		<li> Un Remolque cuya masa máxima autorizada exceda de 750 kg.</li>
+		<li> Requisitos: ser titular del permiso de la clase C en vigor.</li>
+		<li> No implica la concesión del A1 y A.</li>
+		<li> Su obtención implica la concesión del D1+E, D+E, B+E y C1+E, sólo cuando el titular esté en posesión de los permisos de la clase D1 o D (para la concesión del D1+E o D+E)</li>
+		<li> Implica la concesión del C1 y la autorización BTP.</li>
+	</ul>
+	<br />
+	</div>
+	
+	<div class = "imagencita">
+	<img src = "../images/permisoce.jpg" alt="permiso C+E" width="460px" height="345px">
+	</div>
+
+</body>
+</html>
+
+

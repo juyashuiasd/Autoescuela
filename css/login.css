@@ -1,0 +1,85 @@
+body {
+	background-image: url("../images/fondo.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: green;
+	font-family: Arial;
+	width:70%;
+	margin: 0 auto;
+}
+.division{
+	text-align:center;
+}
+
+.lili{
+	width: 100%;
+	text-align: justify;
+}
+
+div p{
+	text-align: justify;
+}
+
+.imagencita img{
+	text-align:center;
+	width:100%;
+	height:100%;
+}
+
+nav{
+	margin:0 auto;
+	width:100%;
+	text-align: center;
+}
+nav ul {
+	list-style:none;
+	padding:0;
+	background:black;
+}
+
+
+
+nav li{
+	line-height: 3em;
+	position: relative;
+	text-align:center;
+	
+}
+
+
+nav li ul{
+	display:none;
+	position:absolute;
+}
+
+nav a{
+	color:#ddd;
+	display: block;
+	padding = 0em 2.5em;
+	text-decoration:none;
+}
+
+
+nav a:hover{
+	background: rgba(0,0,0,.5);
+}
+
+nav li:hover ul{
+	display: block;
+}
+
+nav ul{
+	background:#333;
+	display:table;
+	width:100%;
+}
+
+nav > ul > li{
+	float:left;
+}
+
+nav li li{
+	background:#333;
+}

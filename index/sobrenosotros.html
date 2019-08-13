@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		
+		<link rel="icon" type="image/png" href="../images/cochecito.png" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Sobre nosotros</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
+</script>
+
+	</head>
+
+	<body>
+
+		<div id = "general">
+			<img width="100%" src = "../images/header.jpg" />
+	</div>
+	
+<body>
+	
+<nav>
+    <ul>
+       <li><a href="../index/index.html">Inicio</a></li>
+        <li><a href="../index/sobrenosotros.html">Nosotros</a></li>
+        <li><a href="../index/carne.html">Carnés</a></li>
+        <li><a href="../login.php">Login</a></li>
+        <li><a href="../index/contacto.html">Contacto</a></li><br clear="all" />
+    </ul>
+    <a id="pull" href="#">Menu</a>
+</nav>
+
+
+
+<div>
+<p style="text-align: justify;"><strong>Matrícula:</strong></p>
+Da derecho a asistir a las clases teóricas y a utilizar el aula, los test, claves para internet y otras instalaciones de la autoescuela.
+<p style="text-align: justify;"> <strong>Tramitación:</strong></p>
+Gestión en los centros oficiales del primer expediente, así como la entrega del permiso provisional al interesado, una vez obtenido.
+<p style="text-align: justify;"> <strong>Clases teóricas:</strong></p>
+La duración de las clases será de 45 minutos aprox., durante la cual se explicará el temario, incluyendo preguntas de examen según criterio de la Dirección General de Tráfico, no limitándose unicamente a aclarar dudas o a corregir test.
+<p style="text-align: justify;"> <strong>Clases de circulación:</strong></p>
+La duración de la clase será de 40 minutos, durante la cual, el alumno va al volante, acompañado en el asiento de al lado por un profesor, con título de ejercicio en vigor, que se encargará de enseñar el manejo de los mandos del vehículo, así como la forma correcta de circular, siempre en vías abiertas al tráfico.
+
+</div></body>
+</html>
+
+
+
+

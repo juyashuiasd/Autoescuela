@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="icon" type="image/png" href="../images/cochecito.png" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Inicio</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
+</script>
+
+	</head>
+
+	<body>
+
+		<div id = "general">
+			<img width="100%" alt="header" src = "../images/header.jpg" />
+	</div>
+	
+<nav>
+    <ul>
+        <li><a href="../index/index.html">Inicio</a></li>
+        <li><a href="../index/sobrenosotros.html">Nosotros</a></li>
+        <li><a href="../index/carne.html">Carnés</a></li>
+        <li><a href="../login.php">Login</a></li>
+        <li><a href="../index/contacto.html">Contacto</a></li><br clear="all" />
+    </ul>
+    <a id="pull" href="#">Menu</a>
+</nav>
+
+
+
+
+
+
+
+<div>
+<p> Acabas de entrar en la página de una de las <a href="../index/index.html">autoescuelas de Sevilla</a> más exitosas.
+
+<p> Autoescuela Airbag un equipo joven y dinámico capaz de dar soluciones de forma rápida y eficaz, tanto a particulares como a empresas. 
+	Pionera en el uso de nuevas tecnologías y que sin embargo en ningún momento se ha olvidado, ni se olvidará, de tener siempre un contacto humano y cercano con nuestros alumnos. </p>
+
+<p>La especialización es fundamental para ofrecer una enseñanza de calidad. 
+Matricularse da derecho a asistir a las clases teóricas y a utilizar el aula, los test, claves para internet y otras instalaciones de la autoescuela. </p>
+
+
+<p>Nuestra misión no solo se centra en la formación de nuevos conductores. Una de nuestras finalidades, es ser un punto de referencia básico en educación vial, pero también queremos llegar a ser una zona informativa para todos aquellos usuarios interésados en cuestiones viales.
+De este modo podéis comprobar que no solo os damos información sobre nuestras sucursales o nuestros precios, sino que el apartado de enlaces de interés podéis encontrar datos de interés totalmente actualizados.
+También uno de nuestros compromisos con todos aquellos usuarios que nos visiten será contestar a todas sus dudas, y si nos es imposible, les asesoraremos, en la medida de lo posible, a donde tienen que dirigirse.</p>
+</div>
+
+
+
+
+
+		
+	</body>
+</html>
